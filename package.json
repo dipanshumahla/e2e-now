@@ -2,10 +2,15 @@
   "name": "e2e-now",
   "version": "0.0.1",
   "description": "E2ENow is an end-to-end testing library made to get feedback from developers from around the world.",
+  "types": "./lib/types.d.ts",
+  "main": "./lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rm ./lib/* && tsc"
   },
-  "keywords": [],
+  "keywords": [
+    "e2e-testing",
+    "e2e"
+  ],
   "author": {
     "name": "Dipanshu Mahla",
     "email": "deepanshumahla0077@gmail.com"
@@ -14,14 +19,18 @@
     "type": "git",
     "url": "https://github.com/dipanshumahla/e2e-now"
   },
+  "bugs": {
+    "url": "https://github.com/dipanshumahla/e2e-now/issues"
+  },
+  "homepage": "https://github.com/dipanshumahla/e2e-now",
+  "files": [
+    "lib"
+  ],
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^17.0.31"
   },
   "dependencies": {
     "axios": "^0.27.2"
-  },
-  "publishConfig": {
-    "@dipanshumahla:registry": "https://npm.pkg.github.com/dipanshumahla/e2e-now"
   }
 }
